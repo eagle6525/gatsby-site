@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Pichotta`,
     description: `My personal site`,
+    siteUrl: 'https://inspiring-kowalevski-b8bd49.netlify.app/',
     author: `Wayne Pichotta`,
   },
   plugins: [
@@ -48,6 +49,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sitemap',
     `gatsby-plugin-netlify`,
   ],
 }

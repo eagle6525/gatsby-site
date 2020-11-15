@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Pichotta`,
-    description: `My personal site`,
-    siteUrl: 'https://inspiring-kowalevski-b8bd49.netlify.app',
+    description: `Wayne Pichotta's personal blog`,
+    siteUrl: 'https://blog.pichotta.net',
     author: `Wayne Pichotta`,
   },
   plugins: [
@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Wayne Pichotta's Personal Website`,
+        name: `Wayne Pichotta's personal blog`,
         short_name: `pichotta`,
         start_url: `/`,
-        background_color: `#524763`,
-        theme_color: `#524763`,
+        background_color: `#242582`,
+        theme_color: `#242582`,
         display: `minimal-ui`,
         icon: `src/images/logo.svg`, // This path is relative to the root of the site.
       },

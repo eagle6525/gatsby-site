@@ -19,9 +19,11 @@ import Archive from './archive'
 const MainLayout = styled.main`
   max-width: 90%;
   margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 40px;
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 40px;
+  }
 `
 
 const Layout = ({ children, location }) => {
@@ -61,10 +63,11 @@ const Layout = ({ children, location }) => {
       </MainLayout>
       <footer
         style={{
-          marginTop: `2rem`,
+          marginTop: '2rem',
+          fontSize: '0.8rem',
         }}
       >
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}, Built by Wayne Pichotta using
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </footer>

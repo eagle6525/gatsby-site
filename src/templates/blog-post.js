@@ -15,7 +15,13 @@ const SingleBlogPage = props => {
           __html: markdownRemark.html,
         }}
       ></div>
-      <Link to="/">Go back to the homepage</Link>
+      <div
+        style={{
+          marginBottom: '1.5rem',
+        }}
+      >
+        <Link to="/">Back to the homepage</Link>
+      </div>
     </Layout>
   )
 }

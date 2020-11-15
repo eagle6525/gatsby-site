@@ -17,7 +17,8 @@ import './layout.css'
 import Archive from './archive'
 
 const MainLayout = styled.main`
-  max-width: 90%;
+  width: 90%;
+  max-width: 1250px;
   margin: 1rem auto;
   @media (min-width: 800px) {
     display: grid;

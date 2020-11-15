@@ -14,7 +14,6 @@ const HeaderWrapper = styled.header`
 
 const HeaderContainer = styled.div`
   margin: 0 auto;
-  max-width: 960px;
   padding: 1rem 1rem;
 `
 
@@ -31,10 +30,10 @@ const Header = ({ siteTitle }) => (
         >
           <img
             style={{
-              width: '100px',
+              width: '50px',
             }}
             src={logo}
-            alt="LUT Logo"
+            alt="Wayne Pichotta Logo"
           />
         </Link>
       </h1>

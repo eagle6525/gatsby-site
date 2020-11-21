@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../../components/layout'
+import SEO from '../../components/seo'
 
 const SingleBlogPage = props => {
   const { markdownRemark } = props.data
@@ -27,8 +27,8 @@ const SingleBlogPage = props => {
 }
 
 export const query = graphql`
-  query PostQuery($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query PostQuery($frontmatter__slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $frontmatter__slug } }) {
       html
       frontmatter {
         title
